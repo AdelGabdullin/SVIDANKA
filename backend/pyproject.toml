@@ -1,0 +1,38 @@
+[project]
+name = "svidanka-backend"
+version = "0.1.0"
+description = "Свиданка — backend (FastAPI)"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "alembic",
+    "psycopg[binary]",
+    "pydantic",
+    "pydantic-settings",
+    "redis",
+    "pika",
+    "prometheus-fastapi-instrumentator",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "requests",
+    "httpx",
+    "ruff",
+    "black",
+    "mypy",
+    "allure-pytest",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
