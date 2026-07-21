@@ -37,3 +37,4 @@
 - ADR-001 — технологический стек (FastAPI)
 - ADR-002 — PostgreSQL
 - ADR-003 — Leaflet вместо Google Maps
+- ADR-004 — Отказ от регистрации пользователей в MVP
